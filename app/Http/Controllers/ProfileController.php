@@ -8,9 +8,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
+use App\Traits\ApiResponse;
 
 class ProfileController extends Controller
 {   
+    use ApiResponse;
     /**
      * Display the user's profile form.
      */
